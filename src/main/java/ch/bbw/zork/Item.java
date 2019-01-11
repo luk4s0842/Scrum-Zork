@@ -4,6 +4,7 @@ public class Item {
 	
 	private String name;
 	private String description;
+	private double weightKg;
 	
 	public String getName() {
 		return name;
@@ -17,4 +18,11 @@ public class Item {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	public double getWeightKg() {
+		return weightKg;
+	}
+	public void setWeightKg(double weightKg) {
+		this.weightKg = weightKg;
+	}
+	
 }
