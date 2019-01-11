@@ -17,7 +17,6 @@ public class Zork2 {
 		Game zorkgame = new Game();
 		zorkgame.play();
 	}
-
 }
 
 
