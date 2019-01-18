@@ -5,14 +5,7 @@ public class Item {
 	private String name;
 	private String description;
 	private double weightKg;
-	private double maxCarryWeight;
 
-	public double getMaxCarryWeight() {
-		return maxCarryWeight;
-	}
-	public void setMaxCarryWeight(double maxCarryWeight) {
-		this.maxCarryWeight = maxCarryWeight;
-	}
 	public String getName() {
 		return name;
 	}

@@ -5,6 +5,16 @@ import java.util.ArrayList;
 public class Backpack { 
 	private ArrayList<Item> items = new ArrayList<Item>();
 
+	private double maxCarryWeight;
+
+
+	public double getMaxCarryWeight() {
+		return maxCarryWeight;
+	}
+	public void setMaxCarryWeight(double maxCarryWeight) {
+		this.maxCarryWeight = maxCarryWeight;
+	}
+
 	
 	public void addItem(Item item) {
 		items.add(item);
