@@ -1,12 +1,10 @@
 package ch.bbw;
 
-import static org.junit.Assert.*;
-
+import ch.bbw.zork.Command;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
-import ch.bbw.zork.Command;
+import static org.junit.Assert.*;
 
 public class JUnitCommand {
 
