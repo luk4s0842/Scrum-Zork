@@ -19,6 +19,7 @@ public class JUnitCommand {
 		cmd3 = new Command(null, null);
 	}
 	
+	
 
 	@Test
 	public void testConstructor() {
