@@ -1,6 +1,10 @@
 # Created by https://www.gitignore.io/api/maven
 # Edit at https://www.gitignore.io/?templates=maven
 
+
+src/main/._*
+src/main/._*
+
 ### Maven ###
 target/
 pom.xml.tag
@@ -12,3 +16,4 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+
