@@ -6,11 +6,23 @@ public class Backpack {
 	private ArrayList<Item> items = new ArrayList<Item>();
 
 	private double maxCarryWeight;
+	private double currentCarryWeight;
+
+	public double getCurrentCarryWeight() {
+		return currentCarryWeight;
+	}
+
+	public void setCurrentCarryWeight(double currentCarryWeight) {
+		this.currentCarryWeight = currentCarryWeight;
+	}
+
+
 
 
 	public double getMaxCarryWeight() {
 		return maxCarryWeight;
 	}
+
 	public void setMaxCarryWeight(double maxCarryWeight) {
 		this.maxCarryWeight = maxCarryWeight;
 	}
