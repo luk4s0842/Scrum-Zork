@@ -2,35 +2,41 @@ package ch.bbw;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import ch.bbw.zork.Command;
+import ch.bbw.zork.CommandWords;
 
 public class TestCommandWords {
-private Command cmd1;
+private CommandWords commandWords;
 	
 	@Before
 	public void before() {
-		cmd1 = new Command("ds", null);
-	}
-	
-	@Test
-	public void testConstructor() {
-		assertEquals(cmd1.getCommandWord(), "ds");
+		commandWords = new CommandWords();
 	}
 	
 	@Test
 	public void testIsCommand() {
-		assertFalse(cmd1.isUnknown());
+
+		String showCmds = commandWords.showAll();
+		String [] cmds = showCmds.split("  ");
+		for (String cmd : cmds) {
+			assertTrue(commandWords.isCommand(cmd));
+		}
 		
 	}
 	
 	@Test
-	public void testShowAll() {
-		assertEquals(cmd1.getCommandWord(), "ds");
-		
+	public void testIsNotCommand() {
+		assertFalse(commandWords.isCommand("Test"));
 	}
-
+	
+	@Test
+	public void testShowAll(){
+		assertEquals(commandWords.showAll(),"go  quit  help  back  get  put  backpack  map  ask  ");
+	}
+	
 }
