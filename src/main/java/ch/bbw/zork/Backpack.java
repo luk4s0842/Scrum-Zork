@@ -46,7 +46,6 @@ public class Backpack {
 	public Item getItem(String name) {
 		for (Item item : items) {
 			if (item.getName().equals(name)) {
-				items.remove(item);
 				return item;
 			}
 		}
